@@ -1,19 +1,3 @@
-<div align="center">
-
-# Telegram API
-
----
-
-[![GitHub stars](https://badgen.net/github/stars/estebanpdl/tg-api)](https://GitHub.com/estebanpdl/tg-api/stargazers/)
-[![GitHub watchers](https://img.shields.io/github/watchers/estebanpdl/tg-api.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/estebanpdl/tg-api/watchers/)
-[![Twitter estebanpdl](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com/estebanpdl)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/estebanpdl/tg-api/blob/main/LICENCE)
-[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://www.digitalsherlocks.org/)
-[![Made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-
----
-</div>
-
 ## Overview
 
 It connects to Telegram's API. It generates JSON files containing channel's data, including channel's information and posts. You can search for a specific channel, or a set of channels provided in a text file (one channel per line.)
@@ -32,70 +16,6 @@ Files are saved by default in a folder called *output/data*. These folders are c
 |   		└──channel.json
 |   		└──etc.
 ```
-
-**Software required**
-
-* [Python 3.x](https://www.python.org/)
-* [Telegram API credentials](https://my.telegram.org/auth?to=apps)
-	+ Telegram account
-	+ App `api_id`
-	+ App `api_hash`
-
-**Python required libraries**
-
-* [Telethon](https://docs.telethon.dev/en/stable/)
-* [Pandas](https://pandas.pydata.org/)
-* [Openpyxl](https://openpyxl.readthedocs.io/en/stable/)
-* [tqdm](https://tqdm.github.io/)
-* [Networkx](https://networkx.org/)
-* [Matplotlib](https://matplotlib.org/)
-* [Louvain Community Detection](https://github.com/taynaud/python-louvain)
-
-
-Installing
-----------
-
-- **Via git clone**
-
-```
-git clone https://github.com/estebanpdl/telegram-api.git
-```
-
-This will create a directory called `tg-api` which contains the Python scripts. Cloning allows you to easily upgrade and switch between available releases.
-
-- **From the github download button**
-
-Download the ZIP file from github and use your favorite zip utility to unpack the file `tg-api.zip` on your preferred location.
-
-**After cloning or downloding the repository, install the libraries from `requirements.txt`.**
-
-```
-pip install -r requirements.txt
-```
-
-or
-
-```
-pip3 install -r requirements.txt
-```
-
-**Once you obtain an API ID and API hash on my.telegram.org, populate the `config/config.ini` file with the described values.**
-
-```ini
-
-[Telegram API credentials]
-api_id = api_id
-api_hash = api_hash
-phone = phone
-```
-
----
-
-# Example usage
-
-## main.py
-
-This Python script will connect to Telegram's API and handle your API request.
 
 ### Options
 
